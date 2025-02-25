@@ -93,7 +93,7 @@ header {
 
 /* home */
 #home {
-    background-image: url("/assets/jpg/home-bg-desk.jpg");
+    background-image: url("./assets/jpg/home-bg-desk.jpg");
     height: 882px;
     background-position: center;
     background-size: cover;
@@ -202,7 +202,7 @@ header {
     display: flex;
     gap: 20px;
     .goat {
-        background-image: url("/assets/png/goat.png");
+        background-image: url("./assets/png/goat.png");
         height: 515px;
         width: 620px;
         background-position: center;
