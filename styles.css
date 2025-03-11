@@ -106,7 +106,7 @@ header {
     .gradient {
         position: absolute;
         width: 100%;
-        height: 100px;background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
+        height: 100px;background: linear-gradient(180deg, rgba(128, 128, 128, 0.1) 0%, rgba(64, 64, 64, 0.05) 50%, rgba(0,0,0,0) 100%);
     }
 }
 
@@ -470,7 +470,7 @@ header {
                         height: 2px;
                         width: 24px;
                         border-radius: 2.5px;
-                        background-color: gray;
+                        background-color: var(--color-logoBlue);
                         position: absolute;
                         transform-origin: center;
                         /* transition: all 250ms; */
@@ -513,6 +513,9 @@ header {
                     margin-top: 64px;
                 }
             }
+        }
+        .gradient {
+            display: none;
         }
     }
 
@@ -652,11 +655,15 @@ header {
                         text-align: center;
                     }
                 }
+                
+                .social {
+                    margin-top: 28px;
+                }
             }
             span {
                 width: auto;
                 text-align: center;
-                padding-bottom: 32px;
+                padding: 32px;
             }
         }
     }
