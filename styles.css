@@ -25,7 +25,13 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    // overflow-x: hidden;
 }
+
+body.active_body {
+    overflow: hidden;
+}
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -60,6 +66,7 @@ button {
 }
 
 /* header */
+
 header {
     position: fixed;
     background-color: white;
@@ -72,8 +79,16 @@ header {
         align-items: center;
         justify-content: space-between;
         width: var(--size-minWidth);
-        img {
-            height: 30px;
+        .logo-icons{
+            display: flex;
+            .logo-header {
+                width: 227px;
+                height: 30px;     
+                background-image: url("./assets/svg/logo_monolitica_horizontal.svg");
+            }
+            .hamburger-wrapper {
+                display: none;
+            }
         }
         nav {
             display: flex;
@@ -88,12 +103,17 @@ header {
             }
         }
     }
+    .gradient {
+        position: absolute;
+        width: 100%;
+        height: 100px;background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
+    }
 }
 
 
 /* home */
 #home {
-    background-image: url("./assets/jpg/home-bg-desk.jpg");
+    background-image: url("./assets/jpg/img-banner-01.jpg");
     height: 882px;
     background-position: center;
     background-size: cover;
@@ -202,8 +222,8 @@ header {
     display: flex;
     gap: 20px;
     .goat {
-        background-image: url("./assets/png/goat.png");
-        height: 515px;
+        background-image: url("./assets/jpg/img-sheep-concept.jpg");
+        height: 560px;
         width: 620px;
         background-position: center;
         background-size: cover;
@@ -259,8 +279,7 @@ header {
             flex-direction: column;
             padding-top: 20px;
             h3 {
-                font-family: Roboto;
-                font-weight: 200;
+                font-weight: 300;
                 font-size: 32px;
                 line-height: 38px;
                 color: var(--color-copperLight);
@@ -352,7 +371,293 @@ header {
 
 #footer {
     background-color: var(--color-footer);
-    div {
+    .footerWrapper {
+        width: var(--size-minWidth);
         height: 288px;
+        margin: 0 auto;
+        padding: 64px 48px 0 48px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            width: 370px;
+            a {
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0.25px;
+                color: #D8D5D0;
+            }
+        }
+        .contato {
+            .dadosContato {
+                h3, p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 0.25px;
+                    color: white;
+                }
+                h3 {
+                    font-weight: 700;
+                }
+                p {
+                    font-weight: 400;
+                }
+            }
+            .social {
+                margin-top: 16px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        span {
+            width: 100vw;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 0;
+            color: #827C86;
+        }
+    }
+}
+
+/* ---------- MEDIA ----------*/
+
+@media (max-width: 1320px) {
+
+    /* header */
+
+    #menu {
+        height: 0;
+        transition: 250ms height ease-in;
+        &.active {
+            height: 100svh;
+        }
+    }
+
+    header {
+        width: 100vw;
+        .header-wrapper {
+            padding: 0 24px;
+            height: auto;
+            width: auto;
+            gap: 0;
+            flex-direction: column;
+            .logo-icons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo-header {
+                    margin: 15px 0;
+                    width: 45px;
+                    height: 29px;     
+                    background-image: url("./assets/svg/logo_monolitica_compacta.svg");
+                }
+                .hamburger-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20px;
+                    height: 60px;
+                    align-self: flex-start;
+                    position: relative;
+                    
+                    .bar {
+                        height: 2px;
+                        width: 24px;
+                        border-radius: 2.5px;
+                        background-color: gray;
+                        position: absolute;
+                        transform-origin: center;
+                        /* transition: all 250ms; */
+                        /* transition: transform 100ms; */
+                        transition: rotate 100ms, top 100ms 100ms, bottom 100ms 100ms;
+                    
+                    }
+                    .bar:nth-child(1) {
+                        top: 20px;
+                    }
+                    .bar:nth-child(3) {
+                        bottom: 20px;
+                    }
+                    
+                    &.active_ham .bar {
+                        transition: rotate 100ms 100ms, top 100ms, bottom 100ms;                    
+                    }
+                    &.active_ham .bar:nth-child(1) {
+                        top: 50%;
+                        rotate: 45deg;
+                        translate: 0 -50% 0;
+                    }
+                    &.active_ham .bar:nth-child(2) {
+                        transform: scale(0%);
+                    }
+                    &.active_ham .bar:nth-child(3) {
+                        bottom: 50%;
+                        translate: 0 50% 0;
+                        rotate: -45deg;
+                    }
+                }
+            }
+            nav {
+                // display: none;
+                display: flex;
+                gap: 48px;
+                flex-direction: column;
+                overflow-y: hidden;
+                a:nth-child(1) {
+                    margin-top: 64px;
+                }
+            }
+        }
+    }
+
+
+    /* home */
+    #home {
+        background-image: url("./assets/jpg/img-banner-01.jpg");
+        height: 640px;
+        background-position: center;
+        background-size: cover;
+        min-width: auto;
+        .home-content {
+            padding: 0 24px;
+            width: auto;
+            .home-text {
+                padding-top: 275px;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                h1, h4 {
+                    font-weight: 400;
+                    text-align: center;
+                }
+                h1 {
+                    letter-spacing: 0px;
+                    font-size: 48px;
+                    line-height: 48px;
+                }
+                h4 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.25px;
+                }
+            }
+            img {
+                padding-top: 20px;
+            }
+        }    
+    }
+
+    /* produtos */
+
+    #produtos {
+        padding-bottom: 64px;
+        .header-produtos {
+            height: 250px;
+            padding: 0 24px;
+        }
+        article {
+            width: auto;
+            padding: 0 24px;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            max-height: 550px;
+            justify-content: space-between;
+            gap: 0px;
+            margin-bottom: 24px;
+            img {
+                max-width: 360px;
+            }
+            .produto-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                h2, p {
+                    text-align: center;
+                }
+            }
+            &.invert {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    /* about */
+
+    #about {
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        max-height: 560px;
+        height: auto;
+        .goat {
+            display: none;
+        }
+        .about-content {
+            padding: 0 24px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+            h5, p {
+                text-align: center;
+            }
+        }
+    }
+
+    /* processo */
+
+    #processo {
+        width: auto;
+        flex-direction: column;
+        gap: 20px;
+        height: 645px;
+        > img {
+            transform: rotate(90deg);
+        }
+    }
+
+    /* footer */
+
+    #footer {
+        .footerWrapper {
+            width: auto;
+            height: 555px;
+            padding: 32px 24px 0 24px;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            .nav {
+                flex-direction: column;
+                justify-content: space-evenly;
+                flex: 1;
+                a {
+                    text-align: center;
+                }
+            }
+            .contato {
+                .dadosContato {
+                    h3, p {
+                        text-align: center;
+                    }
+                }
+            }
+            span {
+                width: auto;
+                text-align: center;
+                padding-bottom: 32px;
+            }
+        }
     }
 }

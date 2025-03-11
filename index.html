@@ -7,21 +7,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="./hamburger.js" defer></script>
         <title>MONOLÍTICA</title>
     </head>
     <body>
         <header>
             <div class="header-wrapper">
-                <img src="./assets/svg/logo-monolitica-horizontal.svg"  alt="logo monolitica">
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="#about">Quem Somos</a>
-                    <a href="#">Processo</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#">Fale Conosco</a>
+                <div class="logo-icons">
+                    <div class="logo-header"></div>
+                    <div class="hamburger-wrapper" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <nav id="menu">
+                    <a class="menu_item" href="#home">Home</a>
+                    <a class="menu_item" href="#about">Quem Somos</a>
+                    <a class="menu_item" href="#processo">Processo</a>
+                    <a class="menu_item" href="#produtos">Produtos</a>
+                    <a class="menu_item" href="#">Fale Conosco</a>
                 </nav>
             </div>
+            <div class="gradient"></div>
         </header>
+
         <section id="home">
             <div class="home-content">
                 <div class="home-text">
@@ -39,43 +49,50 @@
                 <p>Alguns de nossos trabalhos realizados em rochas únicas, mantendo as caracteristicas da pedra e a sostfificação do design.<br>Proporcionando a levesa e o requinte do design e a conexão da natureza ao seu ambiente.</p>
             </div>
             <!-- produto-01 -->
-            <article id="produto-01">
-                <img src="./assets/png/box-img.png" alt="imagem da cuba tudor">
+            <article>
+                <img src="./assets/jpg/img-tudor40.jpg" alt="imagem da cuba tudor">
                 <div class="produto-content">
-                    <h2>Cuba Tudor</h2>
-                    <p>Com veios naturais que destacam a essência da rocha, esta cuba esculpida une autenticidade e sofisticação. Um elemento que complementa a arquitetura do ambiente, harmonizando elegância e natureza com exclusividade.</p>
+                    <h2>Cuba Tudor 40</h2>
+                    <p>Cuba básica de design quadrado, com cantos arredondados que suavizam sua forma. O Woodstone encanta com sua aparência extraordinária, evocando os veios naturais da madeira e revelando tons que variam entre claro e escuro, surpreendendo pelo realismo e elegância.</p>
                     <button id="produto-01-button">Mais detalhes</button>
                 </div>
             </article>
             <!-- produto-02 -->
-            <article id="produto-02">
+            <article class="invert">
                 <div class="produto-content">
-                    <h2>Cuba Tudor</h2>
-                    <p>Com veios naturais que destacam a essência da rocha, esta cuba esculpida une autenticidade e sofisticação. Um elemento que complementa a arquitetura do ambiente, harmonizando elegância e natureza com exclusividade.</p>
+                    <h2>Cuba Lina</h2>
+                    <p>Se destaca pela harmonia de círculos perfeitos e inclinações distintas, resultando em um design original. Sua estética única é realçada pelo material de tons mesclados, cuja exoticidade adiciona ainda mais personalidade à peça.</p>
                     <button id="produto-02-button">Mais detalhes</button>
                 </div>
-                <img src="./assets/png/box-img.png" alt="imagem da cuba tudor">
+                <img src="./assets/jpg/img-lina.jpg" alt="imagem da cuba tudor">
             </article>
             <!-- produto-03 -->
-            <article id="produto-03">
-                <img src="./assets/png/box-img.png" alt="imagem da cuba tudor">
+            <article>
+                <img src="./assets/jpg/img-tudor60.jpg" alt="imagem da cuba tudor">
                 <div class="produto-content">
-                    <h2>Cuba Tudor</h2>
-                    <p>Com veios naturais que destacam a essência da rocha, esta cuba esculpida une autenticidade e sofisticação. Um elemento que complementa a arquitetura do ambiente, harmonizando elegância e natureza com exclusividade.</p>
+                    <h2>Cuba Tudor 60</h2>
+                    <p>cuba retangular com cantos arredondados que suavizam sua forma. Os veios ondulados do Sete Mares, em tons de verde, branco e cinza, criam um efeito dinâmico que remete ao mar, combinando elegância e sofisticação.</p>
                     <button id="produto-03-button">Mais detalhes</button>
                 </div>
+            </article>
+            <!-- produto-04 -->
+            <article class="invert">
+                <div class="produto-content">
+                    <h2>Cuba Wind</h2>
+                    <p>A cuba Wind tem um formato orgânico e assimétrico, com bordas arredondadas que realçam os veios naturais da pedra. O Blue Deep, extraído do Ceará, combina azul intenso e veios marrons, criando uma peça exuberante e exótica.</p>
+                    <button id="produto-02-button">Mais detalhes</button>
+                </div>
+                <img src="./assets/jpg/img-wind.jpg" alt="imagem da cuba tudor">
             </article>
         </section>
 
         <section id="about">
-            <!-- <img src="./assets/png/goat.png" alt=""> -->
             <div class="goat"></div>
             <div class="about-content">
                 <img src="./assets/svg/horn.svg" alt="monolitica logo">
                 <h5>Esculpindo Obras de Arte</h5>
-                <p>A Monolítica há anos transforma rochas ornamentais descartadas em peças de design que conectam a natureza ao seu ambiente. Fugimos do óbvio para criar elementos únicos, que tornam cada espaço mais interessante e autêntico.</p>
-                <p>Inspiramo-nos no Rocky Mountain Bighorn, o verdadeiro rei das montanhas. Selvagem e resistente, ele domina os territórios rochosos há séculos, adaptando-se ao ambiente extremo e desafiando alturas imponentes. Seus chifres em espiral, esculpidos pelo tempo, simbolizam a força, a harmonia e a história de sua jornada.</p>                
-                <p>Cada peça Monolítica nasce de um bloco único, carregando histórias esculpidas pela natureza. Assim como não existem dois carneiros com chifres idênticos, nenhuma de nossas criações pode ser replicada. Cada detalhe, cada veio da rocha, compõe uma obra de arte irrepetível.<br>Esculpimos mais do que rocha—esculpimos legado.</p>
+                <p>Há anos transformamos rochas descartadas em peças de design que conectam natureza e autenticidade. Fugimos do óbvio para criar elementos únicos, que tornam cada espaço mais interessante.</p>
+                <p>Inspiramo-nos no carneiro selvagem que domina territórios rochosos com força e resistência. Assim como ele, nossas criações enfrentam o tempo, esculpidas pela natureza em blocos únicos, impossíveis de replicar. Cada veio, cada detalhe, carrega a história da matéria-prima.</p>
             </div>
         </section>
 
@@ -105,7 +122,7 @@
             </div>
         </section>
 
-        <section id="contato">
+        <!-- <section id="contato">
             <div class="contato-wrapper">
                 <div class="contato-content">
                     <h5>Queremos esclarecer suas dúvidas</h5>
@@ -125,11 +142,31 @@
                     <button form="form" type="submit">Enviar</button>
                 </form>
             </div>
-        </section>
+        </section> -->
 
         <section id="footer">
-            <div>
-
+            <div class="footerWrapper">
+                <div class="logo">
+                    <img src="./assets/svg/logo_vertical.svg" alt="Logo monolitica">
+                </div>
+                <div class="nav">
+                    <a href="#about">Quem Somos</a>
+                    <a href="#processo">Processo</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#footer">Fale Conosco</a>
+                </div>
+                <div class="contato">
+                    <div class="dadosContato">
+                        <h3>ATENDIMENTO:</h3>
+                        <p>+55 (28) 99982-0185<br>comercial1@monolitica.design<br>Seg. a Sex. das 9h às 17h</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/people/monoliticadesign/100049841354719/"><img src="./assets/svg/logo_facebook.svg" alt="Logo Facebook"></a>
+                        <a href="https://www.instagram.com/monolitica.design/"><img src="./assets/svg/logo_instagram.svg" alt="Logo Instagram"></a>
+                        <a href="https://br.pinterest.com/monoliticadesign/"><img src="./assets/svg/logo_pinterest.svg" alt="Logo Pinterest"></a>
+                    </div>
+                </div>
+                <span>© Copyright 2021-2025 Monolitica Design LTDA</span>
             </div>
         </section>
     </body>
