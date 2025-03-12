@@ -74,11 +74,11 @@ header {
     .header-wrapper {
         padding: 0 48px;
         height: 62px;
-        margin: 0 auto;
+        margin-inline: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: var(--size-minWidth);
+        max-inline-size: var(--size-minWidth);
         .logo-icons{
             display: flex;
             .logo-header {
@@ -117,11 +117,11 @@ header {
     height: 882px;
     background-position: center;
     background-size: cover;
-    min-width: var(--size-minWidth);
+    min-max-inline-size: var(--size-minWidth);
     .home-content {
         padding: 0 48px;
-        width: var(--size-minWidth);
-        margin: 0 auto;
+        max-inline-size: var(--size-minWidth);
+        margin-inline: auto;
         .home-text {
             padding-top: 350px;
             display: flex;
@@ -148,7 +148,7 @@ header {
         }
         img {
             padding-top: 50px;
-            margin: 0 auto;
+            margin-inline: auto;
         }
     }    
 }
@@ -182,8 +182,8 @@ header {
         }
     }
     article {
-        width: var(--size-minWidth);
-        margin: 0 auto;
+        max-inline-size: var(--size-minWidth);
+        margin-inline: auto;
         padding: 0 48px;
         display: flex;
         gap: 64px;
@@ -217,8 +217,8 @@ header {
 /* about */
 
 #about {
-    width: var(--size-minWidth);
-    margin: 0 auto;
+    max-inline-size: var(--size-minWidth);
+    margin-inline: auto;
     display: flex;
     gap: 20px;
     .goat {
@@ -255,8 +255,8 @@ header {
 /* processo */
 
 #processo {
-    width: var(--size-minWidth);
-    margin: 0 auto;
+    max-inline-size: var(--size-minWidth);
+    margin-inline: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,8 +301,8 @@ header {
 #contato {
     background-color: var(--color-contato);
     .contato-wrapper {
-        width: var(--size-minWidth);
-        margin: 0 auto;
+        max-inline-size: var(--size-minWidth);
+        margin-inline: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -372,9 +372,9 @@ header {
 #footer {
     background-color: var(--color-footer);
     .footerWrapper {
-        width: var(--size-minWidth);
+        max-inline-size: var(--size-minWidth);
         height: 288px;
-        margin: 0 auto;
+        margin-inline: auto;
         padding: 64px 48px 0 48px;
         display: flex;
         justify-content: space-between;
