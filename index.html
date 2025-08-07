@@ -12,17 +12,21 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
         <script src="./hamburger.js" defer></script>
-        <title>MONOLÍTICA</title>
     </head>
     <body>
         <header>
             <div class="header-wrapper">
                 <div class="logo-icons">
                     <div class="logo-header"></div>
-                    <div class="hamburger-wrapper" id="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                    <div class="icons-group">
+                        <a href="https://wa.me/+5528999820185" rel="noopener noreferrer" role="button" target="_blank" title="WhatsApp">
+                            <img class="zap-mobile" src="./assets/svg/btn-whatsapp.svg" alt="botao whatsapp" href="https://wa.me/+5528999820185" rel="noopener noreferrer" role="button" target="_blank" title="WhatsApp">
+                        </a>
+                        <div class="hamburger-wrapper" id="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                     </div>
                 </div>
                 <nav id="menu">
@@ -31,29 +35,70 @@
                     <a class="menu_item" href="#processo">Processo</a>
                     <a class="menu_item" href="#produtos">Produtos</a>
                     <a class="menu_item" href="#footer">Fale Conosco</a>
+                    <a href="https://wa.me/+5528999820185" rel="noopener noreferrer" role="button" target="_blank" title="WhatsApp">
+                        <img class="zap-desktop" src="./assets/svg/btn-whatsapp.svg" alt="botao whatsapp">
+                    </a>
                 </nav>
             </div>
             <div class="gradient"></div>
         </header>
 
         <section id="home">
-            <div class="home-content">
-                <div class="home-text">
-                    <h1>Design<br>esculpido na<br>natureza</h1>
-                    <h4>Peças exclusivas em rochas ornamentais</h4>
-                    <button class="button-produtos" onclick="window.location.href='#produtos'">Conhecer Produtos</button>
+            <img class="mouseIcon" src="./assets/svg/scroll-icon.svg" alt="icone de um mouse dando ênfase na roda de scroll">
+        </section>
+
+        <section id="about">
+            <div class="about-content">
+                <img src="./assets/svg/horn.svg" alt="monolitica logo">
+                <h5>Esculpindo Obras de Arte</h5>
+                <p>Na Monolítica, transformamos rochas ornamentais em peças exclusivas, resultado de mais de 20 anos de experiência aliada ao uso avançado de tecnologia. Nosso compromisso é entregar materiais naturais de altíssima qualidade, que conferem personalidade singular aos projetos dos nossos clientes, criando conexões únicas que traduzem beleza, resistência e exclusividade em cada ambiente.</p>                
+            </div>
+        </section>
+
+        <section id="processo">
+            <div class="etapa">
+                <img src="./assets/svg/icon-process-01.svg" alt="residuo que seria descartado">
+                <div class="etapa-content">
+                    <h3>Escolher</h3>
+                    <p>Resgatamos blocos de rochas ornamentais que seriam descartados nas pedreiras.</p>
                 </div>
-                <img src="./assets/svg/scroll-icon.svg" alt="icone de um mouse dando ênfase na roda de scroll">
+            </div>
+            <img src="./assets/svg/chevron.svg" alt="">
+            <div class="etapa">
+                <img src="./assets/svg/icon-process-02.svg" alt="residuo sendo esculpido">
+                <div class="etapa-content">
+                    <h3>Esculpir</h3>
+                    <p>Transformamos a rocha bruta em peças únicas.</p>
+                </div>
+            </div>
+            <img src="./assets/svg/chevron.svg" alt="">
+            <div class="etapa">
+                <img src="./assets/svg/icon-process-03.svg" alt="projeto final derivado de residuo reaproveitado">
+                <div class="etapa-content">
+                    <h3>Entregar</h3>
+                    <p>Criamos design personalizado com sustentabilidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="galeria-wrapper">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">
+                <img src="./assets/jpg/img-gridlayout.jpg">            
             </div>
         </section>
 
         <section id="produtos">
-            <div class="header-produtos">
-                <div class="apresentacao">
-                    <h3>Design & Natureza</h3>
-                    <p>Alguns de nossos trabalhos realizados em rochas únicas, mantendo as caracteristicas da pedra e a sostfificação do design.<br>Proporcionando a levesa e o requinte do design e a conexão da natureza ao seu ambiente.</p>
-                </div>
-            </div>
             <!-- produto-01 -->
             <article>
                 <img src="./assets/jpg/img-tudor40.jpg" alt="imagem da cuba tudor">
@@ -68,7 +113,7 @@
                 <div class="produto-content">
                     <h2>Cuba Lina</h2>
                     <p>Se destaca pela harmonia de círculos perfeitos e inclinações distintas, resultando em um design original. Sua estética única é realçada pelo material de tons mesclados, cuja exoticidade adiciona ainda mais personalidade à peça.</p>
-                    <button id="produto-02-button" href="#"  target="_blank">Mais detalhes</button>
+                    <!-- <button id="produto-02-button" href="#"  target="_blank">Mais detalhes</button> -->
                 </div>
                 <img src="./assets/jpg/img-lina.jpg" alt="imagem da cuba tudor">
             </article>
@@ -78,7 +123,7 @@
                 <div class="produto-content">
                     <h2>Cuba Tudor 60</h2>
                     <p>cuba retangular com cantos arredondados que suavizam sua forma. Os veios ondulados do Sete Mares, em tons de verde, branco e cinza, criam um efeito dinâmico que remete ao mar, combinando elegância e sofisticação.</p>
-                    <button id="produto-03-button" href="#"  target="_blank">Mais detalhes</button>
+                    <!-- <button id="produto-03-button" href="#"  target="_blank">Mais detalhes</button> -->
                 </div>
             </article>
             <!-- produto-04 -->
@@ -86,72 +131,28 @@
                 <div class="produto-content">
                     <h2>Cuba Wind</h2>
                     <p>A cuba Wind tem um formato orgânico e assimétrico, com bordas arredondadas que realçam os veios naturais da pedra. O Blue Deep, extraído do Ceará, combina azul intenso e veios marrons, criando uma peça exuberante e exótica.</p>
-                    <button id="produto-02-button" href="#"  target="_blank">Mais detalhes</button>
+                    <!-- <button id="produto-02-button" href="#"  target="_blank">Mais detalhes</button> -->
                 </div>
                 <img src="./assets/jpg/img-wind.jpg" alt="imagem da cuba tudor">
             </article>
         </section>
 
-        <section id="about">
-            <div class="goat"></div>
-            <div class="about-content">
-                <img src="./assets/svg/horn.svg" alt="monolitica logo">
-                <h5>Esculpindo Obras de Arte</h5>
-                <p>Há anos transformamos rochas descartadas em peças de design que conectam natureza e autenticidade. Fugimos do óbvio para criar elementos únicos, que tornam cada espaço mais interessante.</p>
-                <p>Inspiramo-nos no carneiro selvagem que domina territórios rochosos com força e resistência. Assim como ele, nossas criações enfrentam o tempo, esculpidas pela natureza em blocos únicos, impossíveis de replicar. Cada veio, cada detalhe, carrega a história da matéria-prima.</p>
-            </div>
+        <section id="preFooter">
+
         </section>
 
-        <section id="processo">
-            <div class="etapa">
-                <img src="./assets/svg/icon-process-01.svg" alt="residuo que seria descartado">
-                <div class="etapa-content">
-                    <h3>COLETA</h3>
-                    <p>Resgatamos blocos de rochas ornamentais que seriam descartados nas pedreiras.</p>
-                </div>
-            </div>
-            <img src="./assets/svg/chevron.svg" alt="">
-            <div class="etapa">
-                <img src="./assets/svg/icon-process-02.svg" alt="residuo sendo esculpido">
-                <div class="etapa-content">
-                    <h3>ESCULPIR</h3>
-                    <p>Transformamos a rocha bruta em peças únicas.</p>
-                </div>
-            </div>
-            <img src="./assets/svg/chevron.svg" alt="">
-            <div class="etapa">
-                <img src="./assets/svg/icon-process-03.svg" alt="projeto final derivado de residuo reaproveitado">
-                <div class="etapa-content">
-                    <h3>PROJETO</h3>
-                    <p>Criamos design personalizado com sustentabilidade.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section id="contato">
-            <div class="contato-wrapper">
-                <div class="contato-content">
-                    <h5>Queremos esclarecer suas dúvidas</h5>
-                    <p>Envie uma mensagem sobre e tire todas as dúvidas sobre estas belezas unicas esculpudas em granito puro</p>
-                </div>
-                <form id="form">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="telefone" name="telefone" placeholder="Telefone">
-                    <label for="email">E-mail:</label>
-                    <input type="text" id="email" name="email" placeholder="E-mail">
-                    <label for="profissao">Profissão:</label>
-                    <input type="text" id="profissao" name="profissao" placeholder="Profissão">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="2" cols="18" placeholder="Mensagem"></textarea>
-                    <button form="form" type="submit">Enviar</button>
+        <section id="newsLetter">
+            <div class="newsLetter-wrapper">
+                <form action="https://docs.google.com/forms/u/0/d/13GMpjyz7pv53eD1pmuMWgqnAz7Imx2FmLisUTbDxmKQ/formResponse" target="_blank">
+                    <span class="assine">ASSINE NOSSA NEWSLETTER</span>
+                    <input type="email" placeholder="Digite seu e-mail" name="entry.1833917446" required>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
-        </section> -->
+        </section>
 
         <section id="footer">
-            <div class="footerWrapper">
+            <div class="footer-wrapper">
                 <div class="logo">
                     <img src="./assets/svg/logo_vertical.svg" alt="Logo monolitica">
                 </div>
@@ -161,19 +162,32 @@
                     <a href="#produtos">Produtos</a>
                     <a href="#footer">Fale Conosco</a>
                 </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/people/monoliticadesign/100049841354719/"  target="_blank"><img src="./assets/svg/logo_facebook.svg" alt="Logo Facebook"></a>
+                    <a href="https://www.instagram.com/monolitica.design/"  target="_blank"><img src="./assets/svg/logo_instagram.svg" alt="Logo Instagram"></a>
+                    <a href="https://br.pinterest.com/monoliticadesign/"  target="_blank"><img src="./assets/svg/logo_pinterest.svg" alt="Logo Pinterest"></a>
+                </div>
                 <div class="contato">
                     <div class="dadosContato">
                         <h3>ATENDIMENTO:</h3>
                         <p>+55 (28) 99982-0185<br>comercial1@monolitica.design<br>Seg. a Sex. das 8h às 18h</p>
                     </div>
-                    <div class="social">
-                        <a href="https://www.facebook.com/people/monoliticadesign/100049841354719/"  target="_blank"><img src="./assets/svg/logo_facebook.svg" alt="Logo Facebook"></a>
-                        <a href="https://www.instagram.com/monolitica.design/"  target="_blank"><img src="./assets/svg/logo_instagram.svg" alt="Logo Instagram"></a>
-                        <a href="https://br.pinterest.com/monoliticadesign/"  target="_blank"><img src="./assets/svg/logo_pinterest.svg" alt="Logo Pinterest"></a>
-                    </div>
                 </div>
                 <span>© Copyright 2021-2025 Monolitica Design LTDA</span>
             </div>
         </section>
+        <!-- <script type="module">
+        import { CreateHilosWhatsappButton } from "https://button.hilos.io/whatsapp-button.esm.js";
+        CreateHilosWhatsappButton({
+            phone: "+5528999820185",
+            message: "",
+            color: "#ffffff",
+            background: "#72d66e",
+            position: "right",
+            padding: "20"
+            });
+        </script> -->
+        <title>MONOLÍTICA</title>
     </body>
 </html>
+
