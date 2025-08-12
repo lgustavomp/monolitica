@@ -12,6 +12,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
         <script src="./hamburger.js" defer></script>
+        <script src="./galery.js" defer></script>
+        <script src="./banners.js" defer></script>
     </head>
     <body>
         <header>
@@ -44,6 +46,8 @@
         </header>
 
         <section id="home">
+            <video autoplay muted loop class="web" src="./assets/video/home_horizontal.mp4"></video>
+            <video autoplay muted loop class="app" src="./assets/video/home_vertical.mp4"></video>
             <img class="mouseIcon" src="./assets/svg/scroll-icon.svg" alt="icone de um mouse dando ênfase na roda de scroll">
         </section>
 
@@ -83,18 +87,27 @@
 
         <section id="galeria">
             <div class="galeria-wrapper">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">
-                <img src="./assets/jpg/img-gridlayout.jpg">            
+                <img src="./assets/jpg/modal/galery-modal-001.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-002.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-003.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-004.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-005.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-006.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-007.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-008.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-009.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-010.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-011.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-012.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-013.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-014.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-015.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-016.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-017.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-018.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-019.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-020.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
+                <img src="./assets/jpg/modal/galery-modal-021.jpg" style="width: 440px; cursor: pointer;" onclick="openImageModal.show({ img: this })" />
             </div>
         </section>
 
@@ -105,7 +118,7 @@
                 <div class="produto-content">
                     <h2>Cuba Tudor 40</h2>
                     <p>Cuba básica de design quadrado, com cantos arredondados que suavizam sua forma. O Woodstone encanta com sua aparência extraordinária, evocando os veios naturais da madeira e revelando tons que variam entre claro e escuro, surpreendendo pelo realismo e elegância.</p>
-                    <button id="produto-01-button" href="#"  target="_blank">Mais detalhes</button>
+                    <!-- <button id="produto-01-button" href="#"  target="_blank">Mais detalhes</button> -->
                 </div>
             </article>
             <!-- produto-02 -->
@@ -138,7 +151,12 @@
         </section>
 
         <section id="preFooter">
-
+            <div class="banners">
+                <img src="./assets/jpg/banner/banner-01.jpg" class="banner">
+                <img src="./assets/jpg/banner/banner-02.jpg" class="banner hidden">
+                <img src="./assets/jpg/banner/banner-03.jpg" class="banner hidden">
+                <img src="./assets/jpg/banner/banner-04.jpg" class="banner hidden">
+            </div>
         </section>
 
         <section id="newsLetter">
