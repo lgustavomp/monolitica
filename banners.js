@@ -7,7 +7,6 @@ function scroll() {
         if (banners && banners?.length > 0) {
             const list = Array.from(banners);
             const total = banners.length;
-            console.log(level, banners, list)
             list.at(level).classList.toggle('hidden');
             if (level < total -1) {
                 level ++;

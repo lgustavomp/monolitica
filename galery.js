@@ -31,8 +31,8 @@ const openImageModal = {
 						<span class="open-image-modal-close">&times;</span>
 					</div>
 
-					<div class="modal-body">
-						<img src="` + src + `" style="width: 100%;" />
+					<div class="modal-body" style="display: flex; justify-content: center;">
+						<img src="` + src + `" style="max-width: 100%; max-height: 90vh;" />
 					</div>
 				</div>
 

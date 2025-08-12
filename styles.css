@@ -794,18 +794,6 @@ header {
     padding: 20px;
 }
 
-/*#open-image-modal .modal-header {
-padding: 2px 16px;
-background-color: #5cb85c;
-color: white;
-}
-
-#open-image-modal .modal-footer {
-padding: 2px 16px;
-background-color: #5cb85c;
-color: white;
-}*/
-
 /* Modal Content */
 #open-image-modal .open-image-modal-content {
     position: relative;
@@ -838,12 +826,12 @@ color: white;
 /* Modal Content/Box */
 #open-image-modal .open-image-modal-content {
     background-color: #fefefe;
-    margin: 1% auto;
-    /* 1% from the top and centered */
-    /*  padding: 20px;*/
+    margin: 1%;
     border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
 }
 
 /* The Close Button */
@@ -852,10 +840,10 @@ color: white;
     cursor: pointer;
     float: right;
     font-size: 28px;
+    line-height: 15px;
     font-weight: bold;
     margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     z-index: 1000000;
     position: relative;
 }
