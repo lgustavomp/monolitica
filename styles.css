@@ -67,6 +67,10 @@ button {
     }
 }
 
+section {    
+    scroll-margin-top: 80px
+}
+
 /* header */
 
 header {
@@ -369,7 +373,7 @@ header {
             right: 50%;
             width: 100%;
             transform: translate(50%, -50%);
-            transition: all 0.2s ease-out;
+            transition: all 0.5s ease-out;
             display: block;
         }
     }
